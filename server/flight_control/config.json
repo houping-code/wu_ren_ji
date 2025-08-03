@@ -1,0 +1,25 @@
+{
+  "name": "flightControl",
+  "http": {
+    "host": "0.0.0.0",
+    "port": 39004
+  },
+  "logger": {
+    "fileName": "flightControl.log",
+    "level": "info"
+  },
+  "rabbitMQ": {
+    "host": "localhost",
+    "port": 5672,
+    "userName": "guest",
+    "password": "guest"
+  },
+
+  "database": {
+    "host": "47.109.49.98",
+    "port": 30884,
+    "user": "uav",
+    "password": "Wrj12345",
+    "keyDatabase": "identityAuth"
+  }
+}

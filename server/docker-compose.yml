@@ -1,0 +1,10 @@
+services:
+  rabbitmq:
+    image: rabbitmq:3.13-management
+    container_name: rabbitmq_flight
+    ports:
+      - "5672:5672"     # AMQP 消息通信端口
+      - "15672:15672"   # Web 管理界面端口
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest

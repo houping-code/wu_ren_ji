@@ -136,7 +136,6 @@ def draw_track(waypoints: dict, flyCommand: dict):
 
     参数:
         waypoints: dict, 每架 UAV 的飞行轨迹
-        flyCommand: dict, 必须包含 "area" 字段，格式为 area: [{lat, lon}, ...]
     """
     if "area" not in flyCommand:
         raise ValueError("flyCommand 中缺少 'area' 字段")

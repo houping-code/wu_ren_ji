@@ -2,9 +2,11 @@ import matplotlib.pyplot as plt
 
 
 
+import math
+
 def generate_mission_plan(area, clientNameList):
     num_uav = len(clientNameList)
-    total_sections = 2 * num_uav  # 不加 1
+    total_sections = 2 * num_uav  # 每架无人机两块区域
 
     waypoint_dict = {}
 
@@ -14,13 +16,22 @@ def generate_mission_plan(area, clientNameList):
     lon_min = min(p["lon"] for p in area)
     lon_max = max(p["lon"] for p in area)
 
+    # 步长（经度划分）
     lat_step = (lat_max - lat_min) / 2 if lat_max != lat_min else 0.0001
     lon_step = (lon_max - lon_min) / total_sections if lon_max != lon_min else 0.0001
 
+    # 计算该纬度下经度单位距离（米）
+    center_lat_rad = math.radians((lat_min + lat_max) / 2)
+    meters_per_lon = 111320 * math.cos(center_lat_rad)
+
+    # 实际间距（米）
+    actual_spacing_meters = lon_step * meters_per_lon
+    if actual_spacing_meters < 5:
+        raise ValueError(f"航线间距为 {actual_spacing_meters:.2f} 米，低于最小要求的 5 米。请减少无人机数量或扩大区域。")
+
     for idx, clientName in enumerate(clientNameList):
-        # 起飞点为第 2*(idx+1) 块的中心
-        start_center_idx = 2 * (idx + 1) - 1  # 因为 index 从 0 开始
-        end_center_idx = start_center_idx - 1  # 飞往前一块
+        start_center_idx = 2 * (idx + 1) - 1
+        end_center_idx = start_center_idx - 1
 
         start_lon = lon_min + (start_center_idx + 0.5) * lon_step
         end_lon = lon_min + (end_center_idx + 0.5) * lon_step
@@ -31,12 +42,12 @@ def generate_mission_plan(area, clientNameList):
             {"lat": lat_max, "lon": start_lon, "alt": alt},
             {"lat": lat_max, "lon": end_lon,   "alt": alt},
             {"lat": lat_min, "lon": end_lon,   "alt": alt},
-            # {"lat": lat_min, "lon": start_lon, "alt": alt},  # 回到起点闭环
         ]
 
         waypoint_dict[clientName] = waypoints
 
     return waypoint_dict
+
 
 
 

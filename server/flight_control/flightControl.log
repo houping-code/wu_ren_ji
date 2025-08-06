@@ -2282,3 +2282,237 @@ ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个
 2025-08-06 16:46:31,702 - INFO - 已发送任务控制指令：{'data': {'waypoints': [{'lat': -35.362, 'lon': 149.16675, 'alt': 35}, {'lat': -35.361, 'lon': 149.16675, 'alt': 35}, {'lat': -35.361, 'lon': 149.16625, 'alt': 35}, {'lat': -35.362, 'lon': 149.16625, 'alt': 35}]}, 'encrypt': False}
 2025-08-06 16:46:31,703 - INFO - 向uav02发送消息：{'dataType': 'plan', 'dataPackage': {'data': {'waypoints': [{'lat': -35.362, 'lon': 149.16675, 'alt': 35}, {'lat': -35.361, 'lon': 149.16675, 'alt': 35}, {'lat': -35.361, 'lon': 149.16625, 'alt': 35}, {'lat': -35.362, 'lon': 149.16625, 'alt': 35}]}, 'encrypt': False}, 'serviceType': 'flightControl'}
 2025-08-06 16:46:36,130 - INFO - 响应前端：b'{"status": "success", "msg": "\\u4efb\\u52a1\\u89c4\\u5212\\u6210\\u529f\\uff01", "waypoints": {"uav01": [{"lat": -35.362, "lon": 149.16575, "alt": 30}, {"lat": -35.361, "lon": 149.16575, "alt": 30}, {"lat": -35.361, "lon": 149.16525, "alt": 30}, {"lat": -35.362, "lon": 149.16525, "alt": 30}], "uav02": [{"lat": -35.362, "lon": 149.16675, "alt": 35}, {"lat": -35.361, "lon": 149.16675, "alt": 35}, {"lat": -35.361, "lon": 149.16625, "alt": 35}, {"lat": -35.362, "lon": 149.16625, "alt": 35}]}}'
+2025-08-06 16:52:27,831 - INFO - 日志模块初始化成功
+2025-08-06 16:52:27,846 - INFO - Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-08-06 16:52:27,847 - INFO - Socket connected: <socket.socket fd=768, family=23, type=1, proto=6, laddr=('::1', 49748, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-08-06 16:52:27,848 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000027AB717E550>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000027AB717E550> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2025-08-06 16:52:27,896 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000027AB717E550> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 16:52:27,896 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000027AB717E550> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 16:52:27,897 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000027AB717E550> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 16:52:27,898 - INFO - Created channel=1
+2025-08-06 16:52:27,903 - INFO - Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-08-06 16:52:27,904 - INFO - Socket connected: <socket.socket fd=856, family=23, type=1, proto=6, laddr=('::1', 49751, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-08-06 16:52:27,905 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000027AB83F8590>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000027AB83F8590> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2025-08-06 16:52:27,952 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000027AB83F8590> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 16:52:27,952 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000027AB83F8590> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 16:52:27,953 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000027AB83F8590> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 16:52:27,953 - INFO - Created channel=1
+2025-08-06 16:52:27,962 - INFO - RabbitMQ服务初始化成功
+2025-08-06 16:52:27,963 - INFO - 飞行控制服务初始化成功！
+2025-08-06 16:52:27,983 - INFO - http服务器初始化成功
+2025-08-06 16:52:36,726 - INFO - 日志模块初始化成功
+2025-08-06 16:52:36,743 - INFO - Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-08-06 16:52:36,744 - INFO - Socket connected: <socket.socket fd=1160, family=23, type=1, proto=6, laddr=('::1', 49765, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-08-06 16:52:36,746 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000023F43BC9590>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000023F43BC9590> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2025-08-06 16:52:36,796 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000023F43BC9590> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 16:52:36,797 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000023F43BC9590> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 16:52:36,798 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000023F43BC9590> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 16:52:36,799 - INFO - Created channel=1
+2025-08-06 16:52:36,805 - INFO - Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-08-06 16:52:36,806 - INFO - Socket connected: <socket.socket fd=1272, family=23, type=1, proto=6, laddr=('::1', 49768, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-08-06 16:52:36,807 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000023F43BD2D10>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000023F43BD2D10> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2025-08-06 16:52:36,856 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000023F43BD2D10> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 16:52:36,857 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000023F43BD2D10> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 16:52:36,857 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000023F43BD2D10> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 16:52:36,857 - INFO - Created channel=1
+2025-08-06 16:52:36,871 - INFO - RabbitMQ服务初始化成功
+2025-08-06 16:52:36,873 - INFO - 飞行控制服务初始化成功！
+2025-08-06 16:52:36,879 - INFO - http服务器初始化成功
+2025-08-06 16:52:42,945 - INFO - 接收到前端请求：{'command': 'mission_plan', 'clientNameList': ['uav01', 'uav02'], 'encrypt': False, 'flyCommand': {'area': [{'lat': -35.362, 'lon': 149.165}, {'lat': -35.362, 'lon': 149.167}, {'lat': -35.361, 'lon': 149.167}, {'lat': -35.361, 'lon': 149.165}]}}
+2025-08-06 16:55:52,044 - INFO - 日志模块初始化成功
+2025-08-06 16:55:52,059 - INFO - Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-08-06 16:55:52,060 - INFO - Socket connected: <socket.socket fd=428, family=23, type=1, proto=6, laddr=('::1', 50102, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-08-06 16:55:52,060 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001B03379A2D0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001B03379A2D0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2025-08-06 16:55:52,113 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001B03379A2D0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 16:55:52,114 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001B03379A2D0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 16:55:52,115 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001B03379A2D0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 16:55:52,115 - INFO - Created channel=1
+2025-08-06 16:55:52,122 - INFO - Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-08-06 16:55:52,123 - INFO - Socket connected: <socket.socket fd=508, family=23, type=1, proto=6, laddr=('::1', 50105, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-08-06 16:55:52,124 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001B0337B8790>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001B0337B8790> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2025-08-06 16:55:52,173 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001B0337B8790> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 16:55:52,173 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001B0337B8790> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 16:55:52,174 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001B0337B8790> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 16:55:52,175 - INFO - Created channel=1
+2025-08-06 16:55:52,185 - INFO - RabbitMQ服务初始化成功
+2025-08-06 16:55:52,185 - INFO - 飞行控制服务初始化成功！
+2025-08-06 16:55:52,193 - INFO - http服务器初始化成功
+2025-08-06 16:55:55,632 - INFO - 接收到前端请求：{'command': 'mission_plan', 'clientNameList': ['uav01', 'uav02'], 'encrypt': False, 'flyCommand': {'area': [{'lat': -35.362, 'lon': 149.165}, {'lat': -35.362, 'lon': 149.167}, {'lat': -35.361, 'lon': 149.167}, {'lat': -35.361, 'lon': 149.165}]}}
+2025-08-06 16:55:55,633 - INFO - 响应前端：b'[]'
+2025-08-06 16:56:53,432 - INFO - 日志模块初始化成功
+2025-08-06 16:56:53,445 - INFO - Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-08-06 16:56:53,446 - INFO - Socket connected: <socket.socket fd=948, family=23, type=1, proto=6, laddr=('::1', 50166, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-08-06 16:56:53,447 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001A8C1EA26D0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001A8C1EA26D0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2025-08-06 16:56:53,497 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001A8C1EA26D0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 16:56:53,497 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001A8C1EA26D0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 16:56:53,498 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001A8C1EA26D0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 16:56:53,499 - INFO - Created channel=1
+2025-08-06 16:56:53,504 - INFO - Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-08-06 16:56:53,505 - INFO - Socket connected: <socket.socket fd=832, family=23, type=1, proto=6, laddr=('::1', 50169, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-08-06 16:56:53,506 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001A8C30F84D0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001A8C30F84D0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2025-08-06 16:56:53,553 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001A8C30F84D0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 16:56:53,554 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001A8C30F84D0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 16:56:53,554 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001A8C30F84D0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 16:56:53,555 - INFO - Created channel=1
+2025-08-06 16:56:53,566 - INFO - RabbitMQ服务初始化成功
+2025-08-06 16:56:53,566 - INFO - 飞行控制服务初始化成功！
+2025-08-06 16:56:53,590 - INFO - http服务器初始化成功
+2025-08-06 16:56:56,413 - INFO - 接收到前端请求：{'command': 'mission_plan', 'clientNameList': ['uav01', 'uav02'], 'encrypt': False, 'flyCommand': {'area': [{'lat': -35.362, 'lon': 149.165}, {'lat': -35.362, 'lon': 149.167}, {'lat': -35.361, 'lon': 149.167}, {'lat': -35.361, 'lon': 149.165}]}}
+2025-08-06 16:56:56,414 - INFO - 响应前端：b'{"status": "success", "msg": "\\u4efb\\u52a1\\u89c4\\u5212\\u6210\\u529f\\uff01", "waypoints": {"uav01": [{"lat": -35.362, "lon": 149.16575, "alt": 30}, {"lat": -35.361, "lon": 149.16575, "alt": 30}, {"lat": -35.361, "lon": 149.16525, "alt": 30}, {"lat": -35.362, "lon": 149.16525, "alt": 30}], "uav02": [{"lat": -35.362, "lon": 149.16675, "alt": 35}, {"lat": -35.361, "lon": 149.16675, "alt": 35}, {"lat": -35.361, "lon": 149.16625, "alt": 35}, {"lat": -35.362, "lon": 149.16625, "alt": 35}]}}'
+2025-08-06 17:07:17,401 - INFO - 日志模块初始化成功
+2025-08-06 17:07:17,415 - INFO - Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-08-06 17:07:17,416 - INFO - Socket connected: <socket.socket fd=880, family=23, type=1, proto=6, laddr=('::1', 61499, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-08-06 17:07:17,417 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000014393615E50>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000014393615E50> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2025-08-06 17:07:17,465 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000014393615E50> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 17:07:17,465 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000014393615E50> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 17:07:17,466 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000014393615E50> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 17:07:17,466 - INFO - Created channel=1
+2025-08-06 17:07:17,472 - INFO - Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-08-06 17:07:17,473 - INFO - Socket connected: <socket.socket fd=932, family=23, type=1, proto=6, laddr=('::1', 61502, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-08-06 17:07:17,474 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000143936282D0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000143936282D0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2025-08-06 17:07:17,521 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000143936282D0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 17:07:17,521 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000143936282D0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 17:07:17,523 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000143936282D0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 17:07:17,523 - INFO - Created channel=1
+2025-08-06 17:07:17,536 - INFO - RabbitMQ服务初始化成功
+2025-08-06 17:07:17,537 - INFO - 飞行控制服务初始化成功！
+2025-08-06 17:07:17,558 - INFO - http服务器初始化成功
+2025-08-06 17:11:38,502 - INFO - 接收到前端请求：{'command': 'mission_plan', 'clientNameList': ['uav01', 'uav02'], 'encrypt': False, 'flyCommand': {'area': [{'lat': -35.362, 'lon': 149.165}, {'lat': -35.362, 'lon': 149.167}, {'lat': -35.361, 'lon': 149.167}, {'lat': -35.361, 'lon': 149.165}]}}
+2025-08-06 17:11:38,514 - INFO - 响应前端：b'{"status": "success", "msg": "\\u4efb\\u52a1\\u89c4\\u5212\\u6210\\u529f\\uff01", "waypoints": {"uav01": [{"lat": -35.362, "lon": 149.16575, "alt": 30}, {"lat": -35.361, "lon": 149.16575, "alt": 30}, {"lat": -35.361, "lon": 149.16525, "alt": 30}, {"lat": -35.362, "lon": 149.16525, "alt": 30}], "uav02": [{"lat": -35.362, "lon": 149.16675, "alt": 35}, {"lat": -35.361, "lon": 149.16675, "alt": 35}, {"lat": -35.361, "lon": 149.16625, "alt": 35}, {"lat": -35.362, "lon": 149.16625, "alt": 35}]}}'
+2025-08-06 17:12:37,287 - INFO - 接收到前端请求：{'command': 'mission_plan', 'clientNameList': ['uav01', 'uav02'], 'encrypt': False, 'flyCommand': {'area': [{'lat': -35.362, 'lon': 149.165}, {'lat': -35.362, 'lon': 149.167}, {'lat': -35.361, 'lon': 149.167}, {'lat': -35.361, 'lon': 149.165}]}}
+2025-08-06 17:12:37,301 - INFO - 响应前端：b'{"status": "success", "msg": "\\u4efb\\u52a1\\u89c4\\u5212\\u6210\\u529f\\uff01", "waypoints": {"uav01": [{"lat": -35.362, "lon": 149.16575, "alt": 30}, {"lat": -35.361, "lon": 149.16575, "alt": 30}, {"lat": -35.361, "lon": 149.16525, "alt": 30}, {"lat": -35.362, "lon": 149.16525, "alt": 30}], "uav02": [{"lat": -35.362, "lon": 149.16675, "alt": 35}, {"lat": -35.361, "lon": 149.16675, "alt": 35}, {"lat": -35.361, "lon": 149.16625, "alt": 35}, {"lat": -35.362, "lon": 149.16625, "alt": 35}]}}'
+2025-08-06 17:13:03,380 - INFO - 接收到前端请求：{'command': 'mission_start', 'clientNameList': ['uav01', 'uav02'], 'encrypt': False}
+2025-08-06 17:13:03,383 - INFO - 已发送任务控制指令：{'data': {'waypoints': [{'lat': -35.362, 'lon': 149.16575, 'alt': 30}, {'lat': -35.361, 'lon': 149.16575, 'alt': 30}, {'lat': -35.361, 'lon': 149.16525, 'alt': 30}, {'lat': -35.362, 'lon': 149.16525, 'alt': 30}]}, 'encrypt': False}
+2025-08-06 17:13:03,420 - INFO - 向uav01发送消息：{'dataType': 'plan', 'dataPackage': {'data': {'waypoints': [{'lat': -35.362, 'lon': 149.16575, 'alt': 30}, {'lat': -35.361, 'lon': 149.16575, 'alt': 30}, {'lat': -35.361, 'lon': 149.16525, 'alt': 30}, {'lat': -35.362, 'lon': 149.16525, 'alt': 30}]}, 'encrypt': False}, 'serviceType': 'flightControl'}
+2025-08-06 17:13:03,428 - INFO - 已发送任务控制指令：{'data': {'waypoints': [{'lat': -35.362, 'lon': 149.16675, 'alt': 35}, {'lat': -35.361, 'lon': 149.16675, 'alt': 35}, {'lat': -35.361, 'lon': 149.16625, 'alt': 35}, {'lat': -35.362, 'lon': 149.16625, 'alt': 35}]}, 'encrypt': False}
+2025-08-06 17:13:03,451 - INFO - 向uav02发送消息：{'dataType': 'plan', 'dataPackage': {'data': {'waypoints': [{'lat': -35.362, 'lon': 149.16675, 'alt': 35}, {'lat': -35.361, 'lon': 149.16675, 'alt': 35}, {'lat': -35.361, 'lon': 149.16625, 'alt': 35}, {'lat': -35.362, 'lon': 149.16625, 'alt': 35}]}, 'encrypt': False}, 'serviceType': 'flightControl'}
+2025-08-06 17:13:03,475 - ERROR - _AsyncBaseTransport._produce() failed, aborting connection: error=ConnectionAbortedError(10053, '你的主机中的软件中止了一个已建立的连接。', None, 10053, None); sock=<socket.socket fd=880, family=23, type=1, proto=6, laddr=('::1', 61499, 0, 0), raddr=('::1', 5672, 0, 0)>; Caller's stack:
+Traceback (most recent call last):
+  File "D:\python\Lib\site-packages\pika\adapters\utils\io_services_utils.py", line 1103, in _on_socket_writable
+    self._produce()
+  File "D:\python\Lib\site-packages\pika\adapters\utils\io_services_utils.py", line 819, in _produce
+    num_bytes_sent = self._sigint_safe_send(self._sock,
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\Lib\site-packages\pika\adapters\utils\io_services_utils.py", line 79, in retry_sigint_wrap
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\Lib\site-packages\pika\adapters\utils\io_services_utils.py", line 861, in _sigint_safe_send
+    return sock.send(data)
+           ^^^^^^^^^^^^^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+Traceback (most recent call last):
+  File "D:\python\Lib\site-packages\pika\adapters\utils\io_services_utils.py", line 1103, in _on_socket_writable
+    self._produce()
+  File "D:\python\Lib\site-packages\pika\adapters\utils\io_services_utils.py", line 819, in _produce
+    num_bytes_sent = self._sigint_safe_send(self._sock,
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\Lib\site-packages\pika\adapters\utils\io_services_utils.py", line 79, in retry_sigint_wrap
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\Lib\site-packages\pika\adapters\utils\io_services_utils.py", line 861, in _sigint_safe_send
+    return sock.send(data)
+           ^^^^^^^^^^^^^^^
+ConnectionAbortedError: [WinError 10053] 你的主机中的软件中止了一个已建立的连接。
+2025-08-06 17:13:03,475 - INFO - 响应前端：b'[{"status": "success", "msg": "\\u6267\\u884c\\u6210\\u529f\\uff01"}, {"status": "success", "msg": "\\u6267\\u884c\\u6210\\u529f\\uff01"}]'
+2025-08-06 17:13:03,480 - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=ConnectionAbortedError(10053, '你的主机中的软件中止了一个已建立的连接。', None, 10053, None); <socket.socket fd=880, family=23, type=1, proto=6, laddr=('::1', 61499, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-08-06 17:13:03,483 - INFO - Deactivating transport: state=1; <socket.socket fd=880, family=23, type=1, proto=6, laddr=('::1', 61499, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-08-06 17:13:03,499 - ERROR - connection_lost: StreamLostError: ("Stream connection lost: ConnectionAbortedError(10053, '你的主机中的软件中止了一个已建立的连接。', None, 10053, None)",)
+2025-08-06 17:13:03,525 - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=StreamLostError: ("Stream connection lost: ConnectionAbortedError(10053, '你的主机中的软件中止了一个已建立的连接。', None, 10053, None)",); pending-error=None
+2025-08-06 17:13:03,546 - INFO - Stack terminated due to StreamLostError: ("Stream connection lost: ConnectionAbortedError(10053, '你的主机中的软件中止了一个已建立的连接。', None, 10053, None)",)
+2025-08-06 17:13:03,548 - INFO - Closing transport socket and unlinking: state=2; <socket.socket fd=880, family=23, type=1, proto=6, laddr=('::1', 61499, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-08-06 17:13:03,553 - ERROR - Unexpected connection close detected: StreamLostError: ("Stream connection lost: ConnectionAbortedError(10053, '你的主机中的软件中止了一个已建立的连接。', None, 10053, None)",)
+2025-08-06 17:13:03,578 - INFO - Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-08-06 17:13:03,582 - INFO - Socket connected: <socket.socket fd=1096, family=23, type=1, proto=6, laddr=('::1', 59241, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-08-06 17:13:03,588 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000014393629390>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000014393629390> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2025-08-06 17:13:03,739 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000014393629390> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 17:13:03,740 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000014393629390> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 17:13:03,742 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000014393629390> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 17:13:03,744 - INFO - Created channel=1
+2025-08-06 17:16:58,543 - INFO - 日志模块初始化成功
+2025-08-06 17:16:58,575 - INFO - Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-08-06 17:16:58,578 - INFO - Socket connected: <socket.socket fd=664, family=23, type=1, proto=6, laddr=('::1', 59422, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-08-06 17:16:58,580 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C4D8F3A210>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C4D8F3A210> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2025-08-06 17:16:58,636 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C4D8F3A210> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 17:16:58,637 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C4D8F3A210> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 17:16:58,638 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C4D8F3A210> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 17:16:58,639 - INFO - Created channel=1
+2025-08-06 17:16:58,652 - INFO - Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-08-06 17:16:58,655 - INFO - Socket connected: <socket.socket fd=980, family=23, type=1, proto=6, laddr=('::1', 59425, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-08-06 17:16:58,656 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C4D8F58950>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C4D8F58950> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2025-08-06 17:16:58,712 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C4D8F58950> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 17:16:58,714 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C4D8F58950> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 17:16:58,715 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C4D8F58950> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 17:16:58,717 - INFO - Created channel=1
+2025-08-06 17:16:58,747 - INFO - RabbitMQ服务初始化成功
+2025-08-06 17:16:58,750 - INFO - 飞行控制服务初始化成功！
+2025-08-06 17:16:58,792 - INFO - http服务器初始化成功
+2025-08-06 17:17:15,741 - INFO - 接收到前端请求：{'command': 'mission_plan', 'clientNameList': ['uav01', 'uav02'], 'encrypt': False, 'flyCommand': {'area': [{'lat': -35.362, 'lon': 149.165}, {'lat': -35.362, 'lon': 149.167}, {'lat': -35.361, 'lon': 149.167}, {'lat': -35.361, 'lon': 149.165}]}}
+2025-08-06 17:17:15,744 - INFO - 响应前端：b'{"status": "success", "msg": "\\u4efb\\u52a1\\u89c4\\u5212\\u6210\\u529f\\uff01", "waypoints": {"uav01": [{"lat": -35.362, "lon": 149.16575, "alt": 30}, {"lat": -35.361, "lon": 149.16575, "alt": 30}, {"lat": -35.361, "lon": 149.16525, "alt": 30}, {"lat": -35.362, "lon": 149.16525, "alt": 30}], "uav02": [{"lat": -35.362, "lon": 149.16675, "alt": 35}, {"lat": -35.361, "lon": 149.16675, "alt": 35}, {"lat": -35.361, "lon": 149.16625, "alt": 35}, {"lat": -35.362, "lon": 149.16625, "alt": 35}]}}'
+2025-08-06 17:17:33,554 - INFO - 接收到前端请求：{'command': 'mission_plan', 'clientNameList': ['uav01', 'uav02'], 'encrypt': False, 'flyCommand': {'area': [{'lat': -35.362, 'lon': 149.165}, {'lat': -35.362, 'lon': 149.167}, {'lat': -35.361, 'lon': 149.167}, {'lat': -35.361, 'lon': 149.165}]}}
+2025-08-06 17:17:33,557 - INFO - 响应前端：b'{"status": "success", "msg": "\\u4efb\\u52a1\\u89c4\\u5212\\u6210\\u529f\\uff01", "waypoints": {"uav01": [{"lat": -35.362, "lon": 149.16575, "alt": 30}, {"lat": -35.361, "lon": 149.16575, "alt": 30}, {"lat": -35.361, "lon": 149.16525, "alt": 30}, {"lat": -35.362, "lon": 149.16525, "alt": 30}], "uav02": [{"lat": -35.362, "lon": 149.16675, "alt": 35}, {"lat": -35.361, "lon": 149.16675, "alt": 35}, {"lat": -35.361, "lon": 149.16625, "alt": 35}, {"lat": -35.362, "lon": 149.16625, "alt": 35}]}}'
+2025-08-06 17:17:58,542 - INFO - 接收到前端请求：{'command': 'mission_start', 'clientNameList': ['uav01', 'uav02'], 'encrypt': False}
+2025-08-06 17:17:58,544 - INFO - 已发送任务控制指令：{'data': {'waypoints': [{'lat': -35.362, 'lon': 149.16575, 'alt': 30}, {'lat': -35.361, 'lon': 149.16575, 'alt': 30}, {'lat': -35.361, 'lon': 149.16525, 'alt': 30}, {'lat': -35.362, 'lon': 149.16525, 'alt': 30}]}, 'encrypt': False}
+2025-08-06 17:17:58,548 - INFO - 向uav01发送消息：{'dataType': 'plan', 'dataPackage': {'data': {'waypoints': [{'lat': -35.362, 'lon': 149.16575, 'alt': 30}, {'lat': -35.361, 'lon': 149.16575, 'alt': 30}, {'lat': -35.361, 'lon': 149.16525, 'alt': 30}, {'lat': -35.362, 'lon': 149.16525, 'alt': 30}]}, 'encrypt': False}, 'serviceType': 'flightControl'}
+2025-08-06 17:17:58,550 - INFO - 已发送任务控制指令：{'data': {'waypoints': [{'lat': -35.362, 'lon': 149.16675, 'alt': 35}, {'lat': -35.361, 'lon': 149.16675, 'alt': 35}, {'lat': -35.361, 'lon': 149.16625, 'alt': 35}, {'lat': -35.362, 'lon': 149.16625, 'alt': 35}]}, 'encrypt': False}
+2025-08-06 17:17:58,551 - INFO - 向uav02发送消息：{'dataType': 'plan', 'dataPackage': {'data': {'waypoints': [{'lat': -35.362, 'lon': 149.16675, 'alt': 35}, {'lat': -35.361, 'lon': 149.16675, 'alt': 35}, {'lat': -35.361, 'lon': 149.16625, 'alt': 35}, {'lat': -35.362, 'lon': 149.16625, 'alt': 35}]}, 'encrypt': False}, 'serviceType': 'flightControl'}
+2025-08-06 17:17:58,552 - INFO - 响应前端：b'[{"status": "success", "msg": "\\u6267\\u884c\\u6210\\u529f\\uff01"}]'
+2025-08-06 18:12:07,703 - INFO - 日志模块初始化成功
+2025-08-06 18:12:07,717 - INFO - Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-08-06 18:12:07,719 - INFO - Socket connected: <socket.socket fd=924, family=23, type=1, proto=6, laddr=('::1', 61330, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-08-06 18:12:07,719 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000149CF0BE550>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000149CF0BE550> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2025-08-06 18:12:07,771 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000149CF0BE550> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 18:12:07,772 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000149CF0BE550> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 18:12:07,772 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000149CF0BE550> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 18:12:07,773 - INFO - Created channel=1
+2025-08-06 18:12:07,778 - INFO - Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-08-06 18:12:07,778 - INFO - Socket connected: <socket.socket fd=928, family=23, type=1, proto=6, laddr=('::1', 61333, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-08-06 18:12:07,779 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000149CF128790>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000149CF128790> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2025-08-06 18:12:07,832 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000149CF128790> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 18:12:07,832 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000149CF128790> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 18:12:07,833 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000149CF128790> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 18:12:07,834 - INFO - Created channel=1
+2025-08-06 18:12:07,849 - INFO - RabbitMQ服务初始化成功
+2025-08-06 18:12:07,850 - INFO - 飞行控制服务初始化成功！
+2025-08-06 18:12:07,877 - INFO - http服务器初始化成功
+2025-08-06 18:12:14,382 - INFO - 接收到前端请求：{'command': 'mission_plan', 'clientNameList': ['uav01', 'uav02'], 'encrypt': False, 'flyCommand': {'area': [{'lat': -35.362, 'lon': 149.165}, {'lat': -35.362, 'lon': 149.167}, {'lat': -35.361, 'lon': 149.167}, {'lat': -35.361, 'lon': 149.165}]}}
+2025-08-06 18:12:14,383 - INFO - 响应前端：b'{"status": "success", "msg": "\\u4efb\\u52a1\\u89c4\\u5212\\u6210\\u529f\\uff01", "waypoints": {"uav01": [{"lat": -35.362, "lon": 149.16575, "alt": 30}, {"lat": -35.361, "lon": 149.16575, "alt": 30}, {"lat": -35.361, "lon": 149.16525, "alt": 30}, {"lat": -35.362, "lon": 149.16525, "alt": 30}], "uav02": [{"lat": -35.362, "lon": 149.16675, "alt": 35}, {"lat": -35.361, "lon": 149.16675, "alt": 35}, {"lat": -35.361, "lon": 149.16625, "alt": 35}, {"lat": -35.362, "lon": 149.16625, "alt": 35}]}}'
+2025-08-06 18:13:36,409 - INFO - 日志模块初始化成功
+2025-08-06 18:13:36,432 - INFO - Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-08-06 18:13:36,434 - INFO - Socket connected: <socket.socket fd=860, family=23, type=1, proto=6, laddr=('::1', 61466, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-08-06 18:13:36,435 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001CB2515A150>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001CB2515A150> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2025-08-06 18:13:36,490 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001CB2515A150> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 18:13:36,490 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001CB2515A150> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 18:13:36,491 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001CB2515A150> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 18:13:36,493 - INFO - Created channel=1
+2025-08-06 18:13:36,497 - INFO - Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-08-06 18:13:36,497 - INFO - Socket connected: <socket.socket fd=920, family=23, type=1, proto=6, laddr=('::1', 61469, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-08-06 18:13:36,498 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001CB25178790>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001CB25178790> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2025-08-06 18:13:36,547 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001CB25178790> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 18:13:36,547 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001CB25178790> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 18:13:36,548 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001CB25178790> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 18:13:36,548 - INFO - Created channel=1
+2025-08-06 18:13:36,556 - INFO - RabbitMQ服务初始化成功
+2025-08-06 18:13:36,558 - INFO - 飞行控制服务初始化成功！
+2025-08-06 18:13:36,578 - INFO - http服务器初始化成功
+2025-08-06 18:13:38,404 - INFO - 接收到前端请求：{'command': 'mission_plan', 'clientNameList': ['uav01', 'uav02'], 'encrypt': False, 'flyCommand': {'area': [{'lat': -35.362, 'lon': 149.165}, {'lat': -35.362, 'lon': 149.167}, {'lat': -35.361, 'lon': 149.167}, {'lat': -35.361, 'lon': 149.165}]}}
+2025-08-06 18:13:42,607 - INFO - 响应前端：b'{"status": "success", "msg": "\\u4efb\\u52a1\\u89c4\\u5212\\u6210\\u529f\\uff01", "waypoints": {"uav01": [{"lat": -35.362, "lon": 149.16575, "alt": 30}, {"lat": -35.361, "lon": 149.16575, "alt": 30}, {"lat": -35.361, "lon": 149.16525, "alt": 30}, {"lat": -35.362, "lon": 149.16525, "alt": 30}], "uav02": [{"lat": -35.362, "lon": 149.16675, "alt": 35}, {"lat": -35.361, "lon": 149.16675, "alt": 35}, {"lat": -35.361, "lon": 149.16625, "alt": 35}, {"lat": -35.362, "lon": 149.16625, "alt": 35}]}}'
+2025-08-06 18:17:06,988 - INFO - 日志模块初始化成功
+2025-08-06 18:17:07,004 - INFO - Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-08-06 18:17:07,004 - INFO - Socket connected: <socket.socket fd=936, family=23, type=1, proto=6, laddr=('::1', 52846, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-08-06 18:17:07,006 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001DA11EB6590>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001DA11EB6590> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2025-08-06 18:17:07,057 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001DA11EB6590> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 18:17:07,058 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001DA11EB6590> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 18:17:07,058 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001DA11EB6590> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 18:17:07,058 - INFO - Created channel=1
+2025-08-06 18:17:07,064 - INFO - Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2025-08-06 18:17:07,065 - INFO - Socket connected: <socket.socket fd=380, family=23, type=1, proto=6, laddr=('::1', 52849, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-08-06 18:17:07,066 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001DA11F184D0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001DA11F184D0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2025-08-06 18:17:07,116 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001DA11F184D0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 18:17:07,116 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001DA11F184D0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 18:17:07,117 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001DA11F184D0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-08-06 18:17:07,117 - INFO - Created channel=1
+2025-08-06 18:17:07,129 - INFO - RabbitMQ服务初始化成功
+2025-08-06 18:17:07,130 - INFO - 飞行控制服务初始化成功！
+2025-08-06 18:17:07,149 - INFO - http服务器初始化成功
+2025-08-06 18:17:11,230 - INFO - 接收到前端请求：{'command': 'mission_plan', 'clientNameList': ['uav01', 'uav02'], 'encrypt': False, 'flyCommand': {'area': [{'lat': -35.362, 'lon': 149.165}, {'lat': -35.362, 'lon': 149.167}, {'lat': -35.361, 'lon': 149.167}, {'lat': -35.361, 'lon': 149.165}]}}
+2025-08-06 18:17:11,231 - INFO - 响应前端：b'{"status": "success", "msg": "\\u4efb\\u52a1\\u89c4\\u5212\\u6210\\u529f\\uff01", "waypoints": {"uav01": [{"lat": -35.362, "lon": 149.16575, "alt": 30}, {"lat": -35.361, "lon": 149.16575, "alt": 30}, {"lat": -35.361, "lon": 149.16525, "alt": 30}, {"lat": -35.362, "lon": 149.16525, "alt": 30}], "uav02": [{"lat": -35.362, "lon": 149.16675, "alt": 35}, {"lat": -35.361, "lon": 149.16675, "alt": 35}, {"lat": -35.361, "lon": 149.16625, "alt": 35}, {"lat": -35.362, "lon": 149.16625, "alt": 35}]}}'

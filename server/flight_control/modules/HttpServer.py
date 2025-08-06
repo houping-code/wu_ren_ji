@@ -5,6 +5,7 @@ from modules import flightControl
 
 
 import matplotlib.pyplot as plt
+#mission_cache = {}  # 格式：{ "uav01": [waypoint1, waypoint2, ...], ... }
 
 class HttpServer(BaseHTTPRequestHandler):
     @classmethod
@@ -60,6 +61,8 @@ class HttpServer(BaseHTTPRequestHandler):
             if command == "mission_plan":
                 area = flyCommand.get("area")
                 waypoint_dict = generate_mission_plan(area, clientNameList)
+                # for client_name, waypoints in waypoint_dict.items():
+                #     mission_cache[client_name] = waypoints
                 successCount = 0
                 for clientName in clientNameList:
                     flyCommand_single = {
@@ -146,7 +149,7 @@ def draw_track(waypoints: dict, flyCommand: dict):
 
     plt.figure(figsize=(8, 6))
 
-    # 绘制边界框
+    #绘制边界框
     border_lats = [p["lat"] for p in area_corners] + [area_corners[0]["lat"]]
     border_lons = [p["lon"] for p in area_corners] + [area_corners[0]["lon"]]
     plt.plot(border_lons, border_lats, 'k--', label="Defined Area")

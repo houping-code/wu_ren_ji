@@ -37,6 +37,7 @@ def messageRecvService():
 
 def messageSend(clientName, dataType, data):
     sendData = {"dataType": dataType, "dataPackage": data}
+    print(f"[messageSend] 将发送给 {clientName} 的数据: {sendData}")
     message.send(clientName, sendData)
 
 def flightControl(clientName, flyCommand, isEncrypt, isPlan=False): #修改flightControl方法，添加isPlan参数

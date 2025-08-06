@@ -34,6 +34,9 @@ def send(clientName, data):
     """
     data["serviceType"] = g_serviceType
     dataBytes = json.dumps(data).encode()
+
+    print(f"[message.send] 编码后的消息: {dataBytes}")
+
     rabbitMQ.send(clientName, dataBytes)
     logger.info(f"向{clientName}发送消息：{data}")
 

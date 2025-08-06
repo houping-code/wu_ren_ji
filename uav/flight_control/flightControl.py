@@ -35,7 +35,7 @@ def init(uav):
     # 启动消息接收线程
     threading.Thread(target=messageRecvService).start()
 
-    logger.info("飞行控制服务初始化成功！")
+    logger.info("无人机端口 飞行控制服务初始化成功！")
 
 
 def messageRecvService():
@@ -99,7 +99,7 @@ def flightControl(flyCommand):
         if g_uav.inAir:
             logger.error("无人机已经起飞，请不要再下达起飞指令！")
         else:
-            ##g_uav.arm_and_takeoff(defaultTakeOffAltitude)
+            g_uav.arm_and_takeoff(defaultTakeOffAltitude)
             logger.info("无人机成功起飞！")
 
     elif specialInstruction == "land":

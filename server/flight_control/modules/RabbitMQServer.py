@@ -79,6 +79,10 @@ class RabbitMQServer:
         # 将消息放入队列
         self.message_queue.put((client_name, message))
 
+        print(f"[RabbitMQ.send] 入队 client: {client_name}, message: {message}")
+        print(f"[RabbitMQ.send] 当前队列长度: {self.message_queue.qsize()}")
+
+
     def _send_message(self, client_name, message):
         routing_key = f'{client_name}'
         for retry in range(self.max_retries):
